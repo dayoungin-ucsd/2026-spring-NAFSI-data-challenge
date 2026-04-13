@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriMap — Food Vulnerability Dashboard</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- React + ReactDOM (production) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- Babel standalone for JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .leaflet-tooltip-dark {
+      background: #162318; border: 1px solid #2d4a38; color: #e8f5ee;
+      font-size: 0.78rem; padding: 6px 10px; border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .leaflet-tooltip-dark::before { display: none; }
+    .leaflet-control-zoom a {
+      background: #162318 !important; color: #e8f5ee !important;
+      border-color: #2d4a38 !important;
+    }
+    .leaflet-control-zoom a:hover { background: #2d7a4f !important; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="data.js"></script>
+  <script type="text/babel" src="app.js"></script>
+</body>
+</html>
