@@ -1,0 +1,10 @@
+nutrihog_county_data.csv
+nutrimap_scored_dataset.csv
+priority_sites.csv
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.DS_Store
+eh-onboarding/
+data/
+work/
